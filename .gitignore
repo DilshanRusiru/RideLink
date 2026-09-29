@@ -1,33 +1,58 @@
-HELP.md
+# ==========================================
+# 1. Spring Boot & Maven Output (Build Files)
+# ==========================================
 target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+!.mvn/wrapper/maven-wrapper.jar
+build/
+!.mvn/
+*.class
+*.jar
+*.war
+*.ear
 
-### STS ###
+# ==========================================
+# 2. Secrets & Sensitive Configs (Passwords Hide කිරීමට)
+# ==========================================
+.env
+src/main/resources/application-local.properties
+src/main/resources/application-local.yml
+src/main/resources/application-secret.properties
+# application.properties එක සම්පූර්ණයෙන්ම Push වෙන එක නවත්වන්න ඕන නම් මෙන්න මේ line එකේ මුල තිබෙන # ඉවත් කරන්න:
+# src/main/resources/application.properties
+
+# ==========================================
+# 3. IDE Files (Eclipse / STS / IntelliJ IDEA / VS Code)
+# ==========================================
+# Eclipse / STS
 .apt_generated
 .classpath
 .factorypath
 .project
-.settings
+.settings/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
+# IntelliJ IDEA
+.idea/
 *.iws
 *.iml
 *.ipr
+out/
 
-### NetBeans ###
+# NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
+# VS Code
 .vscode/
+
+# ==========================================
+# 4. OS & Log Files
+# ==========================================
+*.log
+.DS_Store
+Thumbs.db
+HELP.md
