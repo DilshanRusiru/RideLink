@@ -1,33 +1,17 @@
-package com.ridelink.ridemanagement.model;
+package com.ridelink.ridemanagement.dto;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+import com.ridelink.ridemanagement.model.RideStatus;
 
-@Document(collection = "rides")
-public class Ride {
+public class RideResponse {
 
-    @Id
     private String rideId;
-
     private String passengerId;
     private String driverId;
     private String pickupLocation;
     private String destination;
     private RideStatus status;
 
-    // No-argument constructor required by Spring Data MongoDB
-    public Ride() {
-    }
-
-    // Full constructor
-    public Ride(String rideId, String passengerId, String driverId,
-                String pickupLocation, String destination, RideStatus status) {
-        this.rideId = rideId;
-        this.passengerId = passengerId;
-        this.driverId = driverId;
-        this.pickupLocation = pickupLocation;
-        this.destination = destination;
-        this.status = status;
+    public RideResponse() {
     }
 
     public String getRideId() {
