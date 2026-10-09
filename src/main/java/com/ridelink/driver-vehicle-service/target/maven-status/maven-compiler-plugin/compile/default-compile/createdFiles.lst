@@ -1,0 +1,9 @@
+com/ridelink/driver_vehicle_service/DriverVehicleServiceApplication.class
+com/ridelink/driver_vehicle_service/entity/Driver.class
+com/ridelink/driver_vehicle_service/repository/VehicleRepository.class
+com/ridelink/driver_vehicle_service/service/VehicleService.class
+com/ridelink/driver_vehicle_service/service/DriverService.class
+com/ridelink/driver_vehicle_service/entity/Vehicle.class
+com/ridelink/driver_vehicle_service/repository/DriverRepository.class
+com/ridelink/driver_vehicle_service/controller/VehicleController.class
+com/ridelink/driver_vehicle_service/controller/DriverController.class
